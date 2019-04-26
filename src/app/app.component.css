@@ -1,0 +1,188 @@
+#mainDiv {
+
+}
+#navBarWrapper {
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+  font-size: 16px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+}
+#navbarWrapper nav.desk,  #navbarWrapper nav.mob{
+    width: 100%;
+    background:  black;
+    font-size: 16px;
+    height: auto;
+    box-shadow: 0px 2px 2px 0 rgba(0,0,0,0.14) ;
+
+}
+nav.desk ul {
+  list-style: none;
+  display: flex;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
+nav.desk ul li {
+  width: 20%;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0px;
+  color: white;
+
+  transition: all 0.3s ease;
+}
+nav ul li a {
+  text-decoration: none;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  color: white;
+}
+nav.desk ul li a:hover, nav.mob ul li a:hover {
+  background-color: #95afc0;
+  border: 3px solid white;
+  border-radius: 5px;
+  color: black;
+}
+nav.desk ul li a:focus, nav.mob ul li a:focus  {
+  background: black;
+
+}
+nav.desk ul li a:focus:hover, nav.mob ul li a:focus:hover  {
+  background: #95afc0;
+  color: black;
+}
+nav.desk ul li a.active, nav.mob ul li a.active {
+  background-color: #f5f6fa;
+  color: black;
+}
+
+nav.desk ul li a.active:hover, nav.mob ul li a.active:hover  {
+  color: black;
+  background-color: #95afc0;
+}
+
+nav.mob {
+  display: none;
+}
+
+#outerHamburger {
+  padding-right: 1%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+#hamburger {
+  height: 5%;
+  width: 9%;
+  overflow:hidden;
+  background: white;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+#hamWrap {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+}
+#hamburgerIcon {
+  width: 100%;
+  height: 2.4em;
+}
+#mobListWrap {
+  overflow: hidden;
+}
+#listExpander {
+  margin-top: -100%;
+  transition: all 0.5s;
+}
+#listExpander.expanded {
+  margin-top: 0;
+  width: 100%;
+}
+.contracted {
+
+}
+
+
+
+
+/*Mobile navigation ---------------- */
+@media screen and (max-width: 750px) {
+  nav.desk {
+    display: none;
+  }
+  nav.mob {
+    display: block;
+    align-items: right;
+  }
+  #navbarWrapper nav.mob {
+    font-size: 90%;
+  }
+  #hamburger {
+    height: 5%;
+    width: 8%;
+  }
+  #mobListWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mob ul {
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  .mob li {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  #hamburger {
+    height: 5%;
+    width: 9%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #navbarWrapper nav.mob {
+    font-size: 70%;
+  }
+  #hamburger {
+    height: 5%;
+    width: 9%;
+  }
+
+}
+@media screen and (max-width: 410px) {
+  #navbarWrapper nav.mob {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 337px) {
+  #navbarWrapper nav.mob {
+    font-size: 50%;
+  }
+  #hamburger {
+    height: 5%;
+    width: 9%;
+  }
+}
+
+
+#routerOutlet {
+  margin-top: 0px;
+}
+.navbar{
+  margin-bottom: 0!important;
+}
+
+.navbar-collapse.collapse.in {
+  display: block!important;
+}

@@ -1,0 +1,14 @@
+<form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value, myForm)" #myForm="ngForm">  
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea formControlName='post' class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    </div>
+    <button type="submit"  class="btn btn-primary">Submit</button>
+</form> 
+<hr class="separator1">
+
+<div>
+    <p *ngFor="let c of colleges" >
+        {{c["school.name"]}} 
+    </p>
+</div>

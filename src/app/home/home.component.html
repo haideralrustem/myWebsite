@@ -1,0 +1,151 @@
+<div id="homeMain">
+  
+  <div id="frame">
+    <div id="leftFrame">
+      <div id="left">
+        <div class="image-container">
+          <h2 id="welcome" class="header-text text-gp"><span class="alt-header-text">Welcome to </span> <a class="header-text" routerLink='home/me' routerLinkActive='active'><span class="bolding">HAIDER'S</span></a> website</h2>
+        </div>
+        <hr class="separator1">
+        <p class="text-gp" id="subTitle">Here you can learn more about me </p>
+      </div>
+
+    </div>
+    <div id="rightFrame">
+      <div id="right">
+        <div>
+          <a routerLink='home' routerLinkActive='active'>
+            <img id="me" src="../../assets/me2cropped.png">
+          </a>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Showcase the projects -->
+  <div>
+
+    <div id="segway" >
+      <h3 id="personalProjectsText" class="text-gp">Side Project:</h3>
+    </div>
+    <hr id="segwayHr" class="separator1" style="width:100%;">
+    <!---->
+
+   <div id="showCaseWrapper"> 
+    <div class="container showcase">
+      
+       <!--Main Col-1-->
+      <div class="row">
+        <div class="col-md ">
+          
+          <div class="row">
+            
+              <div class="col-sm m-4 pl-5 justify-content-center title-container"> 
+                <h3 class="card-title text-gp">RE-PARK App</h3>
+                <hr class="separator1" style="width: 100%; border: 1px ridge grey; ">
+              </div>
+            
+          </div>
+          
+          <div class="row pl-5">  <!-- Features Description section -->
+              <div class="col-sm">
+                <div class="row">
+                  <div class="col-sm"><p class="feature-intro text-gp">RePark is an Android app that lets you save
+                    your parking locations to remember them next time</p>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm ml-1">
+                      <ul class="feature-list">
+                        <li class="text-gp pb-1 mb-1">Save up to three locations in your phone</li>
+                        <li class="text-gp pb-1 mb-1">Get notifications when you are finished driving to save your parking spot</li>
+                        <li class="text-gp pb-1 mb-1">Use phone camera to take photos of the parking location and save them</li>
+                      </ul>
+                    </div>
+                  </div>
+                <div id="bottomFeatureRow" class="row">
+                      <div class="col-sm ml-1 mb-5"><a href="https://play.google.com/store/apps/details?id=com.haideralrustem1990.repark">Learn More</a></div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <!--Main Col-2-->
+        <div class="col-md productPhoto">
+          <div id="featurePhotoRow" class="row justify-content-center">
+            <div (window:resize)="onResize($event)" id="imageWrapper" class="image-wrapper pt-5">
+              <a class="pb-5" href="https://play.google.com/store/apps/details?id=com.haideralrustem1990.repark">
+                <img id="reparkScreen" src="../../assets/phoneWithScreen.png">
+              </a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+     </div>
+    </div>
+  </div>
+
+  
+
+  <hr class="separator2">
+
+  <!-- Resume -->
+  <div class="resumeText">
+    <h4 class="text-gp">View my Resume: </h4>
+  </div>
+  <hr class="resumeHr">
+
+    <!-- Add image that enlarges upon hover. Image is picture of a resume-->
+    <div id="resumeWrap" class="image-container">
+      <a  routerLink='./me' routerLinkActive='active'>
+        <img id="resume" src="../../assets/meme.jpg" >
+      </a>
+    </div>
+  
+  <!-- social media section  -->
+
+  <hr class="resumeHr">
+  <div class="resumeText">
+    <h4 class="text-gp">Connect with me through Social Media: </h4>
+  </div>
+
+  <div class="social-media-panel-outer">
+    <div class="social-media-panel">
+      <div id="linkedinDiv">
+        <a href="https://www.linkedin.com/in/haider-al-rustem-32010515a/" class="image-wrapper-a">
+          <img  id="linkedin" class="social-media-pic" src="../../assets/linkedin.png">
+        
+        </a>
+        <p class="text-gp social-media-text">Linkedin</p>
+      </div>
+      <div id="facebookDiv" class="">
+        <a href="https://www.facebook.com/hydar.ali.92" class="image-wrapper-a">
+          <img id="facebook" class="social-media-pic" src="../../assets/facebook.png">
+          
+        </a>
+        <p class="text-gp social-media-text">Facebook</p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!-- Connect with me form -->
+
+  <hr class="resumeHr">
+  <div class="resumeText">
+    <h4 class="text-gp">Send Me a Message Here: </h4>
+  </div>
+  
+  <div  id="formWrapper">
+    <app-connect-form></app-connect-form>
+  </div>
+
+    
+</div>
+
+

@@ -1,0 +1,39 @@
+<div id="formWrapOuter">
+  <div id="formWrap" *ngIf="!name; else formInfo"> 
+    <form [formGroup]="rForm" (ngSubmit)="sendForm(rForm.value)">
+
+      <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input formControlName="name" type="text" class="form-control form-control-sm" id="formGroupExampleInput" placeholder="Your Name">
+      </div>
+      <hr class="form-separator">
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2">Email</label>
+        <input formControlName="email" type="email" class="form-control form-control-sm" id="formGroupExampleInput2" placeholder="example@something.com">
+      </div>
+      <hr class="form-separator">
+
+      <div class="form-group">
+          <label for="formGroupExampleInput2">Phone Number</label>
+          <input formControlName="phone" type="number" class="form-control form-control-sm" id="formGroupExampleInput2" placeholder="Optional">
+        </div>
+      
+      <hr class="form-separator">
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea formControlName="message" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+
+      <hr class="form-separator">
+      <button type="submit" class="btn btn-primary" [disabled]="!rForm.valid">Submit</button>
+
+    </form>
+  </div>
+</div> 
+
+<ng-template #formInfo>
+  <div>
+    {{name}}
+  </div>
+</ng-template> 

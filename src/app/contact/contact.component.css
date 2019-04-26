@@ -1,0 +1,272 @@
+#contMain{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+#frame {
+    height: 400px;
+    width: 100%;
+    background-image: url('../../assets/blue-building.jpg');
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-flex;
+}
+#leftFrame{
+    width: 100%;
+    height:100%;
+    margin-left: 70px;
+    margin-right: 40px;
+    display: inline-flex;
+    align-items: center;
+}
+#right {
+    height: 400px;
+    width: 400px;
+}
+#right div {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+#me {
+    max-width:100%;
+    height: 400px;
+    opacity: 0;
+    overflow:hidden;
+    transition: transform .5s ease;
+}
+#me:hover {
+    transform: scale(1.2) ;
+}
+#welcome {
+    color: aliceblue;
+    font-family: 'Palatino Linotype', serif;
+    text-shadow: 3px 2px black;
+    font-size: 250%;   /*c*/
+    
+}
+
+.separator1 {
+    color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+#subTitle {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    opacity: 0;
+}
+#segway {
+    color: rgb(0, 88, 165);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px  black;
+    font-size: 130%; 
+    margin-top: 5%;  
+    
+}
+#segwayHr {
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    border: 0;
+    height: 8px;
+}
+
+#showCaseWrapper {
+    width: 74%;
+    margin-left: 14%;
+}
+.showcase {
+    margin-top: 3%;
+    background: #dee2e6;
+}
+#personalProjectsText {
+    text-align: center;
+    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    font-size: 120%;
+}
+.title-container {
+    
+}
+.card-title {
+    font-family: "Lucida Console";
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+}
+.feature-list {
+    font-size: 16px;
+    font-family: cursive, sans-serif;
+    color: gray;
+}
+.feature-intro {
+    font-weight: bold;
+}
+#bottomFeatureRow {
+    font-size: 120%;
+}
+bottomFeatureRow a {
+    text-decoration: underline;
+    color: blue;
+}
+#featurePhotoRow {
+    height: 100%;
+}
+.image-wrapper {
+   
+   
+    height: 100%;
+}
+
+.image-wrapper a {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.image-wrapper-a {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#reparkScreen {
+    width: 61%;
+    height: 55%;
+    transition: transform 1s ease;
+}
+.image-wrapper:hover img {
+    transform: scale(1.3);
+}
+.cool-text {
+    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    color: rgb(0, 88, 165);
+}
+.resumeText h3 {
+    
+    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    color: rgb(0, 88, 165);
+}
+.resumeText h4 {
+    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    color: rgb(0, 88, 165);
+}
+.resumeHr {
+    width: 70%;
+    border: 1px solid rgba(143, 143, 143, 0.582);
+}
+
+
+#resumeWrap {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+#resume {
+    transition: transform .5s ease;
+    height: 20vw;
+    padding-bottom: 5%;
+    width: 51vw;
+}
+#resume:hover {
+    transform: scale(1.3);
+}
+
+
+.social-media-panel-outer {
+    margin-left: 2%;
+    margin-top: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    width: 95%;
+}
+.social-media-panel-outer a {
+    
+  transition: transform .5s ease;
+}
+.social-media-panel-outer a:hover {
+    transform: scale(1.2);
+}
+.social-media-panel {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+}
+#facebookDiv {
+    width: 80%;
+    display: inline-grid;
+}
+#linkedinDiv {
+    width: 80%;
+    display: inline-grid;
+}
+.social-media-text {
+    text-align: center;
+    margin-top: 5%;
+}
+.social-media-pic {
+  
+}
+#linkedin {
+    width: 40%;
+    
+}
+#facebook {
+   width: 40%;
+   border: 1px transparent white;
+   border-radius: 7%; 
+}
+
+
+
+/* misc classes  */
+
+.bordered {
+    border: 1px solid gray;
+}
+.separator2 {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+.image-container {
+    overflow: hidden;
+}
+.image-container a {
+    overflow: hidden;
+}
+
+
+/* for media queries:
+change:
+#frame
+#right
+#welcome
+#me
+#subTitle
+*/
+
+@media screen and (min-width: 992px){
+    #reparkScreen {
+        width: 45%;
+        height: 82%;
+    }
+    .image-wrapper {
+        padding-top: 10px;
+    }
+    .image-wrapper:hover img {
+        transform: scale(1.3);
+    }
+}
+@media screen and (max-width: 768px){
+    #reparkScreen {
+         height: 65vw;
+    }
+   
+}
