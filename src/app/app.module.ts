@@ -36,7 +36,7 @@ import { ContactComponent } from './contact/contact.component';
       {path: 'testing', component: TestingComponent},
       {path: 'home', component: HomeComponent},
       {path: 'contact', component: ContactComponent},
-      {path: 'home/me', component: VisualizationComponent},
+      {path: 'me', component: VisualizationComponent},
       {path: '*', component: HomeComponent }
     ],  {useHash: true})
   ],
