@@ -3,8 +3,8 @@
   <div id="frame">
     <div id="leftFrame">
       <div id="left">
-        <div class="image-container">
-          <h2 id="welcome" class="header-text text-gp"><span class="alt-header-text">Welcome to </span> <a class="header-text" routerLink='home/me' routerLinkActive='active'><span class="bolding">HAIDER'S</span></a> website</h2>
+        <div class="image-container welcome-img">
+          <h2 id="welcome" class="header-text text-gp"><span class="alt-header-text">Welcome to </span> <a class="header-text" routerLink='home/me' routerLinkActive='active'><span class="bolding my-name">HAIDER'S</span></a> website</h2>
         </div>
         <hr class="separator1">
         <p class="text-gp" id="subTitle">Here you can learn more about me </p>
@@ -66,7 +66,7 @@
                     </div>
                   </div>
                 <div id="bottomFeatureRow" class="row">
-                      <div class="col-sm ml-1 mb-5"><a href="https://play.google.com/store/apps/details?id=com.haideralrustem1990.repark">Learn More</a></div>
+                      <div class="col-sm ml-1 mb-5"><a href="https://play.google.com/store/apps/details?id=com.haideralrustem1990.repark" target="_blank">Learn More</a></div>
                 </div>
               </div>
             </div>
@@ -100,8 +100,12 @@
 
     <!-- Add image that enlarges upon hover. Image is picture of a resume-->
     <div id="resumeWrap" class="image-container">
+
       <a  routerLink='./me' routerLinkActive='active'>
-        <img id="resume" src="../../assets/meme.jpg" >
+        <div class="resume-img-wrap">
+          <img id="resume" src="../../assets/meme.jpg" >
+        </div>
+        
       </a>
     </div>
   
@@ -115,18 +119,28 @@
   <div class="social-media-panel-outer">
     <div class="social-media-panel">
       <div id="linkedinDiv">
-        <a href="https://www.linkedin.com/in/haider-al-rustem-32010515a/" class="image-wrapper-a">
-          <img  id="linkedin" class="social-media-pic" src="../../assets/linkedin.png">
-        
+        <a href="https://www.linkedin.com/in/haider-al-rustem-32010515a/" target="_blank" class="image-wrapper-a">
+          
+            <img  id="linkedin" class="social-media-pic" src="../../assets/linkedin.png">
+          
         </a>
         <p class="text-gp social-media-text">Linkedin</p>
       </div>
       <div id="facebookDiv" class="">
-        <a href="https://www.facebook.com/hydar.ali.92" class="image-wrapper-a">
+        <a href="https://www.facebook.com/hydar.ali.92" target="_blank" class="image-wrapper-a">
           <img id="facebook" class="social-media-pic" src="../../assets/facebook.png">
           
         </a>
         <p class="text-gp social-media-text">Facebook</p>
+      </div>
+
+
+      <div id="facebookDiv" class="">
+        <a href="https://github.com/haideralrustem" target="_blank" class="image-wrapper-a">
+          <img id="facebook" class="social-media-pic" src="../../assets/github.png">
+          
+        </a>
+        <p class="text-gp social-media-text">Github</p>
       </div>
 
 

@@ -25,7 +25,11 @@ export class HomeComponent implements OnInit {
     $('#imageWrapper').removeClass('pt-5');
    };
    $("#me").delay(1000).animate({ opacity: 1 }, 700);​
-   $("#subTitle").delay(1500).animate({ opacity: 1 }, 700);​
+
+   
+   $("#welcome").delay(600).animate({ opacity: 1 }, 200);​
+
+   $("#subTitle").delay(900).animate({ opacity: 1 }, 500);​
    
 }
 

@@ -4,6 +4,23 @@
   background-repeat: no-repeat;
   padding-top: 2%;
 }
+h3 {
+    width: 100%;
+    margin-left: 1%;
+}
+ul {
+    margin-left: 1px;
+    padding-left: 1px;
+}
+tr {
+    margin-bottom: 1%;
+}
+td {
+    vertical-align: top;
+    margin: 1%;
+    padding: 2%;
+}
+
 .my-card {
     background: #f1f2f6;
     margin-left: 10%;
@@ -14,11 +31,11 @@
     padding-right: 3%;
     padding-bottom: 2%;
     border-radius: 3%;
-
+    border: 3px solid transparent;
 }
 .my-card:hover {
     background: white;
-    font-size: 110%;
+    
     border: 3px solid blue;
 }
 .header-text {
@@ -33,3 +50,5 @@
     height: 8px;
     width: 100%;
 }
+
+
