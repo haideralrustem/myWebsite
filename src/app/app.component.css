@@ -32,8 +32,11 @@ nav.desk ul li {
   cursor: pointer;
   margin-bottom: 0px;
   color: white;
-
-  transition: all 0.3s ease;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  transition: all 0.5s ease;
 }
 nav ul li a {
   text-decoration: none;
