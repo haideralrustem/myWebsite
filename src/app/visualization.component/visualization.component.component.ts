@@ -16,12 +16,7 @@ export class VisualizationComponent implements OnInit, AfterContentInit {
   constructor(private collegeSvc: CollegeFetchService) { }
 
   ngOnInit() {
-  //   this.collegeSvc.fetchColleges().subscribe(
-  //     (colleges: any[]) => {
-  //       this.colleges = colleges;
-  //       console.log(colleges);
-  //       console.log(this.colleges);
-  // });
+    window.scrollTo(0, 0);
   
  }
 
@@ -32,4 +27,6 @@ export class VisualizationComponent implements OnInit, AfterContentInit {
   clicked(event) {
    
   }
+
+
 }

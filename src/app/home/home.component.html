@@ -4,7 +4,7 @@
     <div id="leftFrame">
       <div id="left">
         <div class="image-container welcome-img">
-          <h2 id="welcome" class="header-text text-gp"><span class="alt-header-text">Welcome to </span> <a class="header-text" routerLink='home/me' routerLinkActive='active'><span class="bolding my-name">HAIDER'S</span></a> website</h2>
+          <h2 id="welcome" class="header-text text-gp"><span class="alt-header-text">Welcome to </span> <a class="header-text" routerLink='/me' routerLinkActive='active'><span class="bolding my-name">HAIDER'S</span></a> website</h2>
         </div>
         <hr class="separator1">
         <p class="text-gp" id="subTitle">Here you can learn more about me </p>
@@ -33,7 +33,7 @@
     <hr id="segwayHr" class="separator1" style="width:100%;">
     <!---->
 
-   <div id="showCaseWrapper"> 
+   <div class="showCaseWrapper"> 
     <div class="container showcase">
       
        <!--Main Col-1-->
@@ -86,6 +86,66 @@
       </div>
      </div>
     </div>
+
+
+    <hr>
+    <!-- -------------------------------------------- -->
+
+    <div class="showCaseWrapper"> 
+      <div class="container showcase">
+        
+         <!--Main Col-1-->
+        <div class="row">
+          <div class="col-md ">
+            
+            <div class="row">
+              
+                <div class="col-sm m-4 pl-5 justify-content-center title-container"> 
+                  <h3 class="card-title text-gp">My personal Tableau Visualization Gallery</h3>
+                  <hr class="separator1" style="width: 100%; border: 1px ridge grey; ">
+                </div>
+              
+            </div>
+            
+            <div class="row pl-5">  <!-- Features Description section -->
+                <div class="col-sm">
+                  <div class="row">
+                    <div class="col-sm"><p class="feature-intro text-gp">Tableau is a software
+                      that is dedicated for visual analytics, transforming complex data into
+                      simple visualizations and graphs</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm ml-1">
+                        <ul class="feature-list">
+                          <li class="text-gp pb-1 mb-1">I used Tableau Public to create a gallery of visualizations</li>
+                          <li class="text-gp pb-1 mb-1">These visualization are based on open-source datasets</li>
+                          <li class="text-gp pb-1 mb-1"><a href="https://public.tableau.com/profile/haider.al.rustem#!/?newProfile=&activeTab=0" 
+                            target="_blank">Check out my personal Gallery HERE</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  
+                </div>
+              </div>
+  
+          </div>
+          <!--Main Col-2-->
+          <div class="col-md productPhoto">
+            <div id="featurePhotoRow" class="row justify-content-center">
+              <div (window:resize)="onResize($event)" id="imageWrapper" class="image-wrapper pt-5">
+                <a class="pb-5" href="https://public.tableau.com/profile/haider.al.rustem#!/?newProfile=&activeTab=0" target="_blank">
+                  <img id="tableauScreen" src="../../assets/tableau_shot.png">
+                </a>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+       </div>
+      </div>
+
+
   </div>
 
   
@@ -101,7 +161,7 @@
     <!-- Add image that enlarges upon hover. Image is picture of a resume-->
     <div id="resumeWrap" class="image-container">
 
-      <a  routerLink='./me' routerLinkActive='active'>
+      <a  routerLink='/me' routerLinkActive='active'>
         <div class="resume-img-wrap">
           <img id="resume" src="../../assets/meme.jpg" >
         </div>
