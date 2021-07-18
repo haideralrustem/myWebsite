@@ -62,13 +62,16 @@ export class HomeComponent implements OnInit {
       }
     });
 
+    //....................
+
+
    $(window).scroll( function(){
      let base = 0
     $( ".scroll-in-show" ).each(function( index ) {   
       let top_of_window = $(window).scrollTop();   
       let top_of_object = $(this).offset().top;
-      if(top_of_window >= top_of_object - 700) {
-        console.log(top_of_window, ' >= ', top_of_object);
+      if(top_of_window >= top_of_object - 550) {
+        
         $(this).css({"opacity": "1"});
       } else {
         $(this).css({"opacity": "0"});
@@ -79,7 +82,7 @@ export class HomeComponent implements OnInit {
     $( ".scroll-in-show.earlier" ).each(function( index ) {   
       let top_of_window = $(window).scrollTop();   
       let top_of_object = $(this).offset().top;
-      if(top_of_window >= top_of_object-720) {
+      if(top_of_window >= top_of_object-550) {
         
         $(this).css({"opacity": "1"});
       } else {
