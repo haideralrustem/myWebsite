@@ -1,3 +1,8 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
 #mainDiv {
 
 }
@@ -10,11 +15,15 @@
 
 }
 #navbarWrapper nav.desk,  #navbarWrapper nav.mob{
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
-    background:  black;
+    background:  #26005e;
     font-size: 16px;
     height: auto;
     box-shadow: 0px 2px 2px 0 rgba(0,0,0,0.14) ;
+    border-bottom: 2px solid rgba(207, 205, 205, 0.452);
 
 }
 nav.desk ul {
@@ -33,7 +42,7 @@ nav.desk ul li {
   margin-bottom: 0px;
   color: white;
   padding: 2px 10px 2px 10px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 nav ul li a {
@@ -45,18 +54,18 @@ nav ul li a {
   color: white;
 }
 nav.desk ul li a:hover, nav.mob ul li a:hover {
-  background-color: #95afc0;
+  background-color: #98acfa;
   border: 3px solid white;
   border-radius: 5px;
-  color: black;
+  color: #0c008e;
 }
 nav.desk ul li a:focus, nav.mob ul li a:focus  {
-  background: black;
+  background: #0c008e;
 
 }
 nav.desk ul li a:focus:hover, nav.mob ul li a:focus:hover  {
-  background: #95afc0;
-  color: black;
+  background: #98acfa;
+  color: #0c008e;
 }
 nav.desk ul li a.active, nav.mob ul li a.active {
   background-color: #f5f6fa;
@@ -65,7 +74,7 @@ nav.desk ul li a.active, nav.mob ul li a.active {
 
 nav.desk ul li a.active:hover, nav.mob ul li a.active:hover  {
   color: black;
-  background-color: #95afc0;
+  background-color: #98acfa;
 }
 
 nav.mob {
@@ -99,13 +108,19 @@ nav.mob {
 #mobListWrap {
   overflow: hidden;
 }
+#mobListWrap li {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
 #listExpander {
   margin-top: -100%;
-  transition: all 0.5s;
+  transition: all 0.4s;
+  opacity: 0;
 }
 #listExpander.expanded {
   margin-top: 0;
   width: 100%;
+  opacity: 1;
 }
 .contracted {
 

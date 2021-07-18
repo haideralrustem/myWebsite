@@ -1,10 +1,26 @@
 #main {
-  background-image: url('../../assets/blueback.jpg'); 
+  /* background-image: url('../../assets/architecturalbuilding.jpg'); 
   background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 2%;
+  background-repeat: no-repeat; */
+  background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding-top: 5%;
   font-size: 18px;
   padding-bottom: 5%;
+}
+
+
+span.material-icons {
+    color: #6610f2
+}
+
+
+.scroll-in-show , .dynamic-show, .latent {
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
+    
 }
 
 .bold {
@@ -40,10 +56,10 @@ td {
     border: 3px solid transparent;
     box-shadow: 0px 0px 6px 2px #00bfff;
     transition: 0.7s background-color ease-in-out, 0.7s box-shadow ease-in-out,
-    0.7s border ease-in-out;
+    0.7s border ease-in-out, 1s opacity ease-in-out;
 }
 .my-card:hover {
-    background-color: #e6f3ff;
+    background-color: #ffffff;
     box-shadow: 0px 0px 25px 5px #d058ffb9;
     border: 3px solid #8303b6ea;
     text-shadow: 0px 0px 0.5px #101010;
@@ -93,11 +109,12 @@ td {
     font-size: 19px;
     border-radius: 10px;
     padding: 3px;
+    transition: 0.2s all ease-in-out;
 
 }
 
 .programming-lang-link:hover {
-    background-color: #ffffff;
+    background-color: #e4f8f5;
 }
 
 

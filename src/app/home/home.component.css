@@ -1,77 +1,109 @@
+body {
+    overflow: hidden;
+}
+
 #homeMain{
     
 }
+ 
+h3.text-gp, h4.text-gp {
+    color: rgb(89 67 222);
+}
+
+.debug-background {
+    background: rgb(255 255 255 / 25%);
+}
+
 #frame {
     height: 400px;
     width: 100%;
-    background-image: linear-gradient( rgba(4, 40, 116, 0.301), rgba(4, 40, 116, 0.301) ),url('../../assets/architecturalbuilding.jpg');
-   
+    /* background-image: linear-gradient( rgba(4, 40, 116, 0.301), rgba(4, 40, 116, 0.301) ),url('../../assets/architecturalbuilding.jpg'); */
+    background-image: url('../../assets/purple_lapop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-flex;
+    
+    transition: 0.6s all ease-in-out;
+    opacity: 0;
 }
+
 #leftFrame{
     width: 100%;
     height:100%;
-    margin-left: 70px;
-    margin-right: 40px;
-    display: inline-flex;
-    align-items: center;
-}
-#left {
-    width: 100%;
-}
-#right {
-    height: 400px;
-    width: 400px;
-}
-#right div {
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
-#me {
-    max-width:100%;
-    height: 400px;
-    opacity: 0;
-    overflow:hidden;
-    transition: transform .5s ease;
+#left {
+    position: relative;
+    left: 16%;
+    top: 16%;
+    width: fit-content;
 }
-#me:hover {
-    transform: scale(1.1) ;
-}
+
 
 .alt-header-text {
     color: white;
     font-family: 'Palatino Linotype', serif;
-    text-shadow: 2px 3px black;
+    text-shadow: 1px 2px black;
 }
 
 .my-name {
-    color: rgb(160 251 255);
+    display: inline-block;
     transition: 0.3s all ease-in-out;
+    font-family: 'Cairo', sans-serif;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 14px;
 }
 
-.my-name:hover {
-    font-size: 42px;
+.my-name:hover {    
     transform: scale(1.2);
+   
 }
 
-#welcome {
-    color:#ffffff;
-    font-family: 'Palatino Linotype', serif;
-    text-shadow: 2px 1px black;
-    font-size: 250%;   /*c*/
-    transition: transform .5s ease;
-    text-align: center;
-    opacity: 0;
-    transition: 0.9 all ease-in-out;
-    
+.my-name a {
+    text-decoration: none;
+    color: #87daf8;
 }
+.my-name a:hover {
+   
+    color: #aeecfc;
+    text-shadow: 0px 0px 3px #aeecfc;
+}
+
+
+
+.welcome {
+    height: fit-content;
+    width: 60vw;
+    /* background-color: #cac6c642; */
+    font-family: monospace, sans-serif;
+    font-size: 200%;
+    /* opacity: 0; */
+    text-align: center;
+    background: rgb(255 255 255 / 25%);
+    border-radius: 20px;
+
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+
+    transition: 0.9s all ease-in-out;
+}
+
+
+
+
+
+.welcome-text {
+    color: beige;
+    font-family: 'Cairo', sans-serif;
+}
+
 
 .header-text {
     color: rgb(160 251 255);
     font-family: 'Palatino Linotype', serif;
-    text-shadow: 3px 2px black;
+    text-shadow: 1px 2px black;
     
 }
 
@@ -81,6 +113,10 @@
 }
 
 #subTitle {
+    position: relative;
+    top: 200%;
+
+    width: 100%;
     color :#130f40;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
@@ -90,12 +126,32 @@
     border-radius: 13px;
     text-align: center;
     text-shadow: 0px 1.1px #a9a7a7;
-    background: rgb(255 255 255 / 75%);
-    width: 59%;
-    margin-left: 23%;
+    background: rgb(255 255 255 / 65%);
+    
+    margin-left: 0%;
+    padding: 1%;
+    transition: 0.3s text-shadow ease-in-out, 0.1s color ease-in-out,
+                0.1s box-shadow ease-in-out;
+    
+    
 }
+#subTitle:hover {
+    color: #5a2cff;
+    background: rgb(255 255 255 / 85%);
+    text-shadow: 0px 0px 0px #0c90fa;
+    box-shadow: 0px 0px 20px 5px #87daf8;
+}
+
+.subTitle-link {
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+}
+
+
+
+
 #segway {
-    color: rgb(0, 88, 165);
+    
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 1px  black;
     font-size: 130%; 
@@ -108,13 +164,27 @@
     height: 8px;
 }
 
+.projects-main-wrap {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
 .showCaseWrapper {
     width: 74%;
     margin-left: 14%;
 }
 .showcase {
+    
     margin-top: 3%;
-    background: #dee2e6;
+    /* background: #d07af28a; */
+    background: #b57ddb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f3b7b6, #b57ddb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f3b7b6, #b57ddb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.scroll-in-show {
+    opacity: 0;
+    transition: 1s opacity ease-in-out;
 }
 #personalProjectsText {
     text-align: center;
@@ -129,11 +199,12 @@
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
+    color: #26005e;
 }
 .feature-list {
     font-size: 16px;
     font-family: cursive, sans-serif;
-    color: gray;
+    color: rgb(49, 49, 49);
 }
 .feature-intro {
     font-weight: bold;
@@ -148,9 +219,14 @@ bottomFeatureRow a {
 #featurePhotoRow {
     height: 100%;
 }
+
+.project-description-text{
+        padding: 0 0 0 5%;
+}
+
+
 .image-wrapper {
-   
-   
+
     height: 100%;
 }
 
@@ -159,6 +235,7 @@ bottomFeatureRow a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1%;
     height: 100%;
 }
 .image-wrapper-a {
@@ -168,10 +245,14 @@ bottomFeatureRow a {
     justify-content: center;
     height: 100%;
 }
+.second .image-wrapper a {
+    padding-top: 3%;
+}
+
+
 #reparkScreen {
     width: 61%;
-    height: 55%;
-    
+    height: 100%;
     transition: transform 1s ease;
 }
 #tableauScreen {
@@ -182,7 +263,12 @@ bottomFeatureRow a {
 }
 
 .image-wrapper:hover img {
-    transform: scale(1.2);
+    transform: scale(1.19);
+    
+}
+.second .image-wrapper:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px #bc87f8;
 }
 
 .resumeText {
@@ -190,8 +276,10 @@ bottomFeatureRow a {
 }
 .resumeText h4 {
     font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
-    color: rgb(0, 88, 165);
+    
 }
+
+
 .resumeHr {
     width: 70%;
     border: 1px solid rgba(143, 143, 143, 0.582);
@@ -281,15 +369,48 @@ bottomFeatureRow a {
 .bordered {
     border: 1px solid gray;
 }
+
+.separator-styled{
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-style: solid;
+    border-width: 8px 11px 0 0px;
+    border-color: #0c90fa transparent transparent;
+    transition: 0.7s opacity ease-in-out;
+    opacity: 0;
+}
+
 .separator2 {
     height: 12px;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 .image-container.welcome-img {
-   
+    position: relative;
+    left: 80%;
+
+    width: 100%;
     overflow: visible;
+    display: block;
+    padding-left: 2%;
+
+    transition: 1s all ease-in-out;
+    
 }
+.pre-animation-left {
+    left: 200%;  
+}
+.pre-animation-top {
+    top: 200%;  
+}
+.post-animation-left  {
+    left: 0%;
+}
+.post-animation-top {
+    top: 0%;
+}
+
 .image-container {
     overflow: hidden;
 }
@@ -310,8 +431,178 @@ change:
 #me
 #subTitle
 */
+@media  screen and (min-width: 320px) and (max-width: 480px) {
+    /* Styles */
+    #right {
+        height: 25vw;
+        width: 400px;
+    }
 
-@media screen and (min-width: 992px){
+    #leftFrame .text-gp  {
+        font-size: 100%;
+    }
+
+    #leftFrame .welcome-text-wrap span, .my-name {
+        font-size: 80%;
+    }
+
+    #left {
+        left: 17%;
+        top: 20%;
+        width: 60vw;
+    }
+
+    .projects-main-wrap {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .showCaseWrapper {
+        width: 93%;
+        margin-left: 4%;
+    }
+    .image-container.welcome-img.post-animation-left {
+        left: 0%;
+    }
+
+    .row project-description-text .text-gp {
+        font-size: 16px;
+    }
+
+    
+    #reparkScreen {
+        width: 38%;
+        height: 60%;
+    }
+    .productPhoto {
+        height:fit-content;
+    }
+    .image-wrapper-a {
+        width: 20vw;
+    }
+
+    #social-media-connect {
+        width: 90%;
+        margin-left: 4%;
+    }
+    
+}
+
+@media  screen and (min-width: 480px) and (max-width: 568px) {
+    
+    #left {
+        left: 17%;
+        top: 20%;
+        width: 60vw;
+    }
+
+    .showCaseWrapper {
+        width: 93%;
+        margin-left: 4%;
+    }
+
+    .image-wrapper-a {
+        width: 18vw;
+    }
+
+    .image-container.welcome-img.post-animation-left {
+        left: 0%;
+    }
+
+    #reparkScreen {
+        width: 38%;
+        height: 60%;
+    }
+    .productPhoto {
+        height:fit-content;
+    }
+
+    #social-media-connect {
+        width: 90%;
+        margin-left: 4%;
+    }
+
+
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    #subTitle {
+        
+    }
+    #leftFrame {
+        overflow: visible;
+        max-width: 36vw;
+    }
+    #left {
+        left: 41%;
+        top: 20%;
+    }
+    .image-container.welcome-img {
+        
+    
+    }
+
+    .showCaseWrapper {
+        width: 90%;
+        margin-left: 6%;
+    }
+
+    .image-container.welcome-img.post-animation-left {
+        left: 0%;
+    }
+    .post-animation-top {
+        top: 0%;
+    }
+    #reparkScreen {
+        width: 38%;
+        height: 60%;
+    }
+    .productPhoto {
+        height:fit-content;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+   
+    .image-container.welcome-img.post-animation-left  {
+        left: 0%;
+    }
+    .post-animation-top {
+        top: 0%;
+    }
+    #reparkScreen {
+        width: 45%;
+        height: 60%;
+    }
+    .productPhoto {
+        height:fit-content;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    .image-container.welcome-img.post-animation-left {
+        left: 0%;
+    }
+    .post-animation-top {
+        top: 0%;
+    }
+
+    .welcome {        
+        width: 55vw;
+    }
+    #reparkScreen {
+        width: 43%;
+        height: 60%;
+    }
+    .productPhoto {
+        height:fit-content;
+    }
+    
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
     #reparkScreen {
         width: 45%;
         height: 82%;
@@ -320,12 +611,95 @@ change:
         padding-top: 10px;
     }
     .image-wrapper:hover img {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
+
+    .welcome {
+        padding-bottom: 3%;
+        width: 55vw;
+    }
+    .image-container.welcome-img.post-animation-left  {
+        left: 0%;
+    }
+    .post-animation-top {
+        top: 0%;
+    }
+
+     #reparkScreen {
+        margin-top: 1%;
+        width: 43%;
+        height: 60%;
+    }
+    .productPhoto {
+        padding-top: 5%;
+        height:100%;
+    }
+    .repark .productPhoto {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1380px) {
+    .welcome {
+        padding-bottom: 4%;
+        width: 56vw;
+    }
+    .image-container.welcome-img.post-animation-left {
+        left: -3%;
+    }
+
+
+    #reparkScreen {
+        margin-top: 1%;
+        width: 43%;
+        height: 60%;
+    }
+    .productPhoto {
+        padding-top: 5%;
+        height:100%;
+    }
+    .repark .productPhoto {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 1380px) {
+    .welcome {
+        padding-bottom: 4%;
+        width: 56vw;
+    }
+    .image-container.welcome-img.post-animation-left {
+        left: -3%;
+    }
+
+    .showCaseWrapper {
+        width: 60%;
+        margin-left: 18%;
+        
+    }
+
+    #reparkScreen {
+        margin-top: 1%;
+        width: 43%;
+        height: 60%;
+    }
+    .productPhoto {
+        padding-top: 5%;
+        height:100%;
+    }
+    .repark .productPhoto {
+        width: 55%;
+    }
+    
+}
+
+
+
+/* ............ LEGACY .................. */
+@media screen and (min-width: 992px){
+    
 }
 @media screen and (max-width: 768px){
-    #reparkScreen {
-         height: 65vw;
-    }
-   
+    
 }
+
+/* ............................ */

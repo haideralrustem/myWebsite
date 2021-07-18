@@ -4,7 +4,8 @@ import { RouterModule, Router } from '@angular/router';
 import { WindowRefService, ICustomWindow } from '../services/windowRef';
 import { CollegeFetchService } from '../services/college-fetch.service';
 
-declare var $;
+declare var $;  // jquery declaration
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,27 +19,99 @@ export class HomeComponent implements OnInit {
     this.window = windowRef.nativeWindow;
    }
 
+  visible = '0';
+  base_animation = 500;
+  
+
   ngOnInit() {
+  
+    $('#frame').delay(300).animate({opacity: 1}, 300);
     
    if((window.innerWidth) > 992)
    {
-    $('#imageWrapper').removeClass('pt-5');
+    $('#imageWrapper');
    };
+
    $("#me").delay(1000).animate({ opacity: 1 }, 700);​
 
    
-   $("#welcome").delay(600).animate({ opacity: 1 }, 200);​
+  //  $("#welcome").delay(600).animate({ opacity: 1 }, 200);​
 
-   $("#subTitle").delay(900).animate({ opacity: 1 }, 500);​
+   $('.separator-styled').delay(this.base_animation+ 300).animate({ opacity: 1,
+                                                                  top: 0 }, 1000);​
+   $("#subTitle").delay(this.base_animation+ 1500).animate({ opacity: 1,
+                                                            top: 0 }, 1000);​
+   
+
+    $( ".scroll-in-show" ).each(function( index ) {   
+      let top_of_window = $(window).scrollTop();   
+      let top_of_object = $(this).offset().top;
+      if(top_of_window >= top_of_object*0.6) {
+        $(this).css({"opacity": "1"});
+      } else {
+        $(this).css({"opacity": "0"});
+      }
+    });
+    $( ".scroll-in-show.earlier" ).each(function( index ) {   
+      let top_of_window = $(window).scrollTop();   
+      let top_of_object = $(this).offset().top;
+      if(top_of_window >= top_of_object*0.2) {
+        $(this).css({"opacity": "1"});
+      } else {
+        $(this).css({"opacity": "0"});
+      }
+    });
+
+   $(window).scroll( function(){
+     let base = 0
+    $( ".scroll-in-show" ).each(function( index ) {   
+      let top_of_window = $(window).scrollTop();   
+      let top_of_object = $(this).offset().top;
+      if(top_of_window >= top_of_object - 700) {
+        console.log(top_of_window, ' >= ', top_of_object);
+        $(this).css({"opacity": "1"});
+      } else {
+        $(this).css({"opacity": "0"});
+      }
+      base += 0.01
+    });    
+
+    $( ".scroll-in-show.earlier" ).each(function( index ) {   
+      let top_of_window = $(window).scrollTop();   
+      let top_of_object = $(this).offset().top;
+      if(top_of_window >= top_of_object-720) {
+        
+        $(this).css({"opacity": "1"});
+      } else {
+        $(this).css({"opacity": "0"});
+      }
+    });  
+    
+  });                                                         ​
+
+   this.slideAnimations();
+   
+   
    
 }
 
 
 onResize(event: any){
    if (event.target.innerWidth > 992) {
-      $('#imageWrapper').removeClass('pt-5');
+      $('.my-name-expander');
    }
+
 }
+
+
+slideAnimations() {
+  setTimeout(()=>{
+    this.visible='1';
+  },this.base_animation + 500);   
+
+}
+
+
 
 mockGet() {
    this.collegeSvc.fetchColleges().subscribe(
