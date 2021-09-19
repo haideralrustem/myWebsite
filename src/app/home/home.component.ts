@@ -41,7 +41,9 @@ export class HomeComponent implements OnInit {
                                                                   top: 0 }, 1000);​
    $("#subTitle").delay(this.base_animation+ 1500).animate({ opacity: 1,
                                                             top: 0 }, 1000);​
-   
+
+    $(".my-photo").delay(this.base_animation+ 1700).animate({ opacity: 1 }, 1300);​
+
 
     $( ".scroll-in-show" ).each(function( index ) {   
       let top_of_window = $(window).scrollTop();   

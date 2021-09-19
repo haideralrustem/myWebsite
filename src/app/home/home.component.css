@@ -15,6 +15,7 @@ h3.text-gp, h4.text-gp {
 }
 
 #frame {
+    position: relative;
     height: 400px;
     width: 100%;
     /* background-image: linear-gradient( rgba(4, 40, 116, 0.301), rgba(4, 40, 116, 0.301) ),url('../../assets/architecturalbuilding.jpg'); */
@@ -25,6 +26,24 @@ h3.text-gp, h4.text-gp {
     transition: 0.6s all ease-in-out;
     opacity: 0;
 }
+
+.my-photo {
+    position: absolute;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    top: 85%;;
+    left: 40%;
+
+    opacity: 0;
+    
+}
+.my-photo img {
+    width: 15vw;
+    border-radius: 45px;
+}
+
+
 
 #leftFrame{
     width: 100%;
@@ -188,7 +207,7 @@ h3.text-gp, h4.text-gp {
 }
 #personalProjectsText {
     text-align: center;
-    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: 120%;
 }
 .title-container {
@@ -249,6 +268,18 @@ bottomFeatureRow a {
     padding-top: 3%;
 }
 
+#imageWrapperDjango {
+    overflow: visible;
+}
+
+#imageWrapperDjango a {
+    overflow: visible;
+}
+#djangoAppScreen {
+    width: 45%;
+    transition: transform 1s ease;
+    border-radius: 10px;
+}
 
 #reparkScreen {
     width: 61%;
@@ -262,6 +293,10 @@ bottomFeatureRow a {
     transition: transform 1s ease;
 }
 
+#djangoAppScreen:hover {
+    transform: scale(1.19);
+    box-shadow: 0px 0px 10px 5px #bc87f8;
+}
 .image-wrapper:hover img {
     transform: scale(1.19);
     
@@ -422,6 +457,10 @@ bottomFeatureRow a {
     font-weight: bold;
 }
 
+#formWrapper {
+    margin-bottom: 15%;
+}
+
 
 /* for media queries:
 change:
@@ -439,7 +478,7 @@ change:
     }
 
     #leftFrame .text-gp  {
-        font-size: 100%;
+        font-size: 16px;
     }
 
     #leftFrame .welcome-text-wrap span, .my-name {
@@ -487,6 +526,8 @@ change:
     
 }
 
+
+
 @media  screen and (min-width: 480px) and (max-width: 568px) {
     
     #left {
@@ -521,13 +562,22 @@ change:
         margin-left: 4%;
     }
 
+    .my-photo {
+       top: 85%;;
+    }
+    .my-photo img {
+        width: 10vw;
+        border-radius: 45px;
+    }
+    #subTitle {
+        font-size: 19px;
+    }
+
 
 }
 
 @media screen and (min-width: 568px) and (max-width: 768px) {
-    #subTitle {
-        
-    }
+    
     #leftFrame {
         overflow: visible;
         max-width: 36vw;
@@ -560,6 +610,18 @@ change:
         height:fit-content;
     }
 
+
+    .my-photo {
+        top: 72%;
+    }
+    .my-photo img {
+        width: 12vw;
+        border-radius: 45px;
+    }
+    #subTitle {
+        font-size: 20px;
+    }
+
     
 }
 
@@ -577,6 +639,17 @@ change:
     }
     .productPhoto {
         height:fit-content;
+    }
+
+    .my-photo {
+        top: 72%;
+    }
+    .my-photo img {
+        width: 12vw;
+        border-radius: 45px;
+    }
+    #subTitle {
+        font-size: 20px;
     }
 }
 
@@ -598,11 +671,25 @@ change:
     .productPhoto {
         height:fit-content;
     }
+
+    .my-photo {
+        top: 75%;
+    }
+    .my-photo img {
+        width: 8vw;
+        border-radius: 55px;
+    }
+    #subTitle {
+        font-size: 20px;
+    }
     
 }
 
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    #djangoAppScreen {
+        width: 65%;
+    }
     #reparkScreen {
         width: 45%;
         height: 82%;
@@ -637,6 +724,17 @@ change:
     .repark .productPhoto {
         width: 55%;
     }
+
+    .my-photo {
+        top: 75%;
+    }
+    .my-photo img {
+        width: 8vw;
+        border-radius: 65px;
+    }
+    #subTitle {
+        font-size: 23px;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1380px) {
@@ -649,6 +747,10 @@ change:
     }
 
 
+    #djangoAppScreen {
+        width: 65%;
+    }
+
     #reparkScreen {
         margin-top: 1%;
         width: 43%;
@@ -660,6 +762,19 @@ change:
     }
     .repark .productPhoto {
         width: 55%;
+    }
+
+
+
+    .my-photo {
+        top: 70%;
+    }
+    .my-photo img {
+        width: 8vw;
+        border-radius: 65px;
+    }
+    #subTitle {
+        font-size: 23px;
     }
 }
 @media screen and (min-width: 1380px) {
@@ -676,7 +791,9 @@ change:
         margin-left: 18%;
         
     }
-
+    #djangoAppScreen {
+        width: 65%;
+    }
     #reparkScreen {
         margin-top: 1%;
         width: 43%;
@@ -689,8 +806,24 @@ change:
     .repark .productPhoto {
         width: 55%;
     }
+
+
+    .my-photo {
+        top: 71%;
+    }
+    .my-photo img {
+        width: 6vw;
+        border-radius: 65px;
+    }
+    #subTitle {
+        font-size: 23px;
+    }
     
 }
+
+
+
+/* ...............STYLING THE PROFILE PHOTO............. */
 
 
 

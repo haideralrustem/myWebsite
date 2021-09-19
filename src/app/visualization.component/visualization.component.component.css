@@ -133,3 +133,71 @@ td {
 .back-top-btn:hover {
     opacity:1; 
 }
+
+
+#work-phone-span{
+    display: initial;
+}
+
+
+#work-phone-span-mob{
+    display: none;
+}
+
+
+
+@media  screen and (min-width: 320px) and (max-width: 480px) {
+    /* Styles */
+    #work-phone-span{
+        display: none;
+    }
+
+
+    #work-phone-span-mob{
+        display: block;
+    }
+}
+
+@media  screen and (min-width: 480px) and (max-width: 568px) {
+    #work-phone-span{
+        display: none;
+    }
+
+    #work-phone-span-mob{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    #work-phone-span{
+        display: none;
+    }
+
+    #work-phone-span-mob{
+        display: block;
+    }
+        
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+   
+    
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+    
+    
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+   
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1380px) {
+   
+}
+@media screen and (min-width: 1380px) {
+  
+}

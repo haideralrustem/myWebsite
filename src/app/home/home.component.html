@@ -4,6 +4,14 @@
 <div id="homeMain">
   
   <div id="frame">
+
+    <div class="my-photo">
+      <a routerLink='/me' routerLinkActive='active'>
+        <img src="../../assets/haider_smile_image2.jpg">
+      </a>
+      
+    </div>
+
     <div id="leftFrame">
       <div id="left">
         <div class="image-container welcome-img "
@@ -40,6 +48,8 @@
         </div>
 
 
+
+
                         
         </div>
         <hr class="separator-styled">
@@ -64,7 +74,68 @@
       <h3 id="personalProjectsText" class="text-gp">Side Projects:</h3>
     </div>
     <hr id="segwayHr" class="separator1" style="width:100%;">
+
     <!---->
+
+
+    <div class="showCaseWrapper"> 
+      <div class="container showcase scroll-in-show earlier repark">
+        
+         <!--Main Col-1-->
+        <div class="row">
+          <div class="col-md ">
+            
+            <div class="row">
+              
+                <div class="col-sm m-4  justify-content-center title-container"> 
+                  <h3 class="card-title text-gp">Computational Analytics Web App</h3>
+                  <hr class="separator1" style="width: 100%; border: 1px ridge grey; ">
+                </div>
+              
+            </div>
+            
+            <div class="row project-description-text">  <!-- Features Description section -->
+                <div class="col-sm">
+                  <div class="row">
+                    <div class="col-sm"><p class="feature-intro text-gp">A website that was built using Django framework.
+                      Focuses on analytical projects.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm ml-1">
+                        <ul class="feature-list">
+                          <li class="text-gp pb-1 mb-1">Contains a simple plotting app</li>
+                          <li class="text-gp pb-1 mb-1">Contains a text analysis app</li>
+                          <li class="text-gp pb-1 mb-1">Built with the Django framework with Python at the backend.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  <div id="bottomFeatureRow" class="row">
+                        <div class="col-sm ml-1 mb-5"><a href="https://play.google.com/store/apps/details?id=com.haideralrustem1990.repark" target="_blank">Learn More</a></div>
+                  </div>
+                </div>
+              </div>
+  
+          </div>
+          <!--Main Col-2-->
+          <div class="productPhoto">
+            <div id="featurePhotoRow" class="row justify-content-center">
+              <div (window:resize)="onResize($event)" id="imageWrapperDjango" class="image-wrapper">
+                <a class="pb-5" href="https://play.google.com/store/apps/details?id=com.haideralrustem1990.repark" target="_blank" >
+                  <img id="djangoAppScreen" src="../../assets/djangoAppScreen.png">
+                </a>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+       </div>
+      </div>
+  
+
+
+    <!--  -->
 
    <div class="showCaseWrapper"> 
     <div class="container showcase scroll-in-show earlier repark">

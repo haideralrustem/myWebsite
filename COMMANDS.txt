@@ -1,3 +1,4 @@
-cd C:\Users\xario\OneDrive\Documents\git repos\myWebsite\node_modules\.bin>;
-ng serve;
-ng build;
+run Node cmd;
+cd C:\Users\xario\OneDrive\Documents\git repos\myWebsite\node_modules\.bin
+ng serve
+ng build
