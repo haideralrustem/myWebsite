@@ -5,6 +5,10 @@ body {
 #homeMain{
     
 }
+
+.text-gp {
+    font-family: 'Times New Roman', Times, serif;
+}
  
 h3.text-gp, h4.text-gp {
     color: rgb(89 67 222);
@@ -33,7 +37,7 @@ h3.text-gp, h4.text-gp {
     max-width: 100%;
     max-height: 100%;
     top: 85%;;
-    left: 40%;
+    left: 47%;
 
     opacity: 0;
     
@@ -52,7 +56,7 @@ h3.text-gp, h4.text-gp {
 
 #left {
     position: relative;
-    left: 16%;
+    left: 22%;
     top: 16%;
     width: fit-content;
 }
@@ -486,7 +490,7 @@ change:
     }
 
     #left {
-        left: 17%;
+        left: 20%;
         top: 20%;
         width: 60vw;
     }
@@ -502,6 +506,16 @@ change:
     .image-container.welcome-img.post-animation-left {
         left: 0%;
     }
+
+    .my-photo {
+       top: 85%;
+       left: 45%;
+    }
+    .my-photo img {
+        width: 10vw;
+        border-radius: 45px;
+    }
+
 
     .row project-description-text .text-gp {
         font-size: 16px;
@@ -563,7 +577,8 @@ change:
     }
 
     .my-photo {
-       top: 85%;;
+       top: 85%;
+       left: 45%;
     }
     .my-photo img {
         width: 10vw;
@@ -612,12 +627,17 @@ change:
 
 
     .my-photo {
-        top: 72%;
+        top: 75%;;
+        left: 40%;
+
     }
+
     .my-photo img {
         width: 12vw;
         border-radius: 45px;
     }
+
+
     #subTitle {
         font-size: 20px;
     }
@@ -626,7 +646,12 @@ change:
 }
 
 @media screen and (min-width: 768px) and (max-width: 900px) {
-   
+    
+    #left {
+        left: 20%;
+        top: 20%;
+    }
+
     .image-container.welcome-img.post-animation-left  {
         left: 0%;
     }
@@ -653,7 +678,16 @@ change:
     }
 }
 
+
 @media screen and (min-width: 900px) and (max-width: 1000px) {
+
+
+
+    #left {
+        left: 21%;
+    }
+
+
     .image-container.welcome-img.post-animation-left {
         left: 0%;
     }
@@ -686,7 +720,13 @@ change:
 }
 
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+
+    #left {
+        left: 21%;
+    }
+
+
     #djangoAppScreen {
         width: 65%;
     }
@@ -737,7 +777,12 @@ change:
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1380px) {
+@media screen and (min-width: 1201px) and (max-width: 1380px) {
+
+     #left {
+        left: 21%;
+    }
+
     .welcome {
         padding-bottom: 4%;
         width: 56vw;
@@ -777,7 +822,11 @@ change:
         font-size: 23px;
     }
 }
-@media screen and (min-width: 1380px) {
+@media screen and (min-width: 1381px) and (max-width: 1600px) {
+    #left {
+        left: 22%;
+    }
+
     .welcome {
         padding-bottom: 4%;
         width: 56vw;
@@ -820,6 +869,52 @@ change:
     }
     
 }
+
+
+
+
+@media screen and (min-width: 1601px) { 
+    .welcome {
+        padding-bottom: 4%;
+        width: 56vw;
+    }
+
+
+
+    .image-container.welcome-img.post-animation-left {
+        left: 0%;
+    }
+
+
+    .my-photo {
+    position: absolute;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    top: 85%;;
+    left: 47%;
+
+    opacity: 0;
+    
+   }
+    .my-photo img {
+        width: 5vw;
+        border-radius: 45px;
+    }
+}
+
+/* @media screen and (min-width: 1801px) and (max-width: 1900px) {
+    .welcome {
+        padding-bottom: 4%;
+        width: 56vw;
+    }
+    .image-container.welcome-img.post-animation-left {
+        left: -3%;
+    } 
+    
+} */
+
+
 
 
 

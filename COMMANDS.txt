@@ -1,4 +1,8 @@
 run Node cmd;
-cd C:\Users\xario\OneDrive\Documents\git repos\myWebsite\node_modules\.bin
+cd C:\Users\xario\OneDrive\Documents\myWebsite\node_modules\.bin
 ng serve
 ng build
+
+
+
+set NODE_OPTIONS=--openssl-legacy-provider && ng serve
