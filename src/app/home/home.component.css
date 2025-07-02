@@ -106,7 +106,7 @@ h3.text-gp, h4.text-gp {
     border-radius: 20px;
 
     padding-top: 4%;
-    padding-left: 5%;
+    padding-left: 0%;
     padding-right: 5%;
     
 
@@ -432,7 +432,7 @@ bottomFeatureRow a {
     width: 100%;
     overflow: visible;
     display: block;
-    padding-left: 2%;
+    padding-left: 0%;
 
     transition: 1s all ease-in-out;
     
@@ -474,6 +474,8 @@ change:
 #me
 #subTitle
 */
+/* --===================================================== */
+
 @media  screen and (min-width: 320px) and (max-width: 480px) {
     /* Styles */
     #right {
@@ -503,6 +505,7 @@ change:
         width: 93%;
         margin-left: 4%;
     }
+
     .image-container.welcome-img.post-animation-left {
         left: 0%;
     }
@@ -545,7 +548,7 @@ change:
 @media  screen and (min-width: 480px) and (max-width: 568px) {
     
     #left {
-        left: 17%;
+        left: 18%;
         top: 20%;
         width: 60vw;
     }
@@ -577,7 +580,7 @@ change:
     }
 
     .my-photo {
-       top: 85%;
+       top: 80%;
        left: 45%;
     }
     .my-photo img {
@@ -586,6 +589,11 @@ change:
     }
     #subTitle {
         font-size: 19px;
+    }
+
+    .projects-main-wrap {
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
 
@@ -598,7 +606,7 @@ change:
         max-width: 36vw;
     }
     #left {
-        left: 41%;
+        left: 50%;
         top: 20%;
     }
     .image-container.welcome-img {
@@ -628,7 +636,7 @@ change:
 
     .my-photo {
         top: 75%;;
-        left: 40%;
+        left: 43%;
 
     }
 
@@ -667,10 +675,11 @@ change:
     }
 
     .my-photo {
-        top: 72%;
+        top: 76%;
+        left: 46%;
     }
     .my-photo img {
-        width: 12vw;
+        width: 9vw;
         border-radius: 45px;
     }
     #subTitle {
@@ -708,6 +717,7 @@ change:
 
     .my-photo {
         top: 75%;
+        left: 45%;
     }
     .my-photo img {
         width: 8vw;
@@ -766,7 +776,8 @@ change:
     }
 
     .my-photo {
-        top: 75%;
+        top: 72%;
+        left: 46%;
     }
     .my-photo img {
         width: 8vw;
@@ -774,6 +785,15 @@ change:
     }
     #subTitle {
         font-size: 23px;
+    }
+}
+
+
+/* ======================================================= */
+
+@media screen and (min-width: 1201px) {
+    .image-container.welcome-img {
+        padding-left: 3%;
     }
 }
 
@@ -813,6 +833,7 @@ change:
 
     .my-photo {
         top: 70%;
+        left: 46%;
     }
     .my-photo img {
         width: 8vw;
@@ -880,6 +901,9 @@ change:
     }
 
 
+     .image-container.welcome-img {
+        padding-left: 0%;
+    }
 
     .image-container.welcome-img.post-animation-left {
         left: 0%;

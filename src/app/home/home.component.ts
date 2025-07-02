@@ -43,56 +43,60 @@ export class HomeComponent implements OnInit {
                                                             top: 0 }, 1000);​
 
     $(".my-photo").delay(this.base_animation+ 1700).animate({ opacity: 1 }, 1300);​
+    $( ".scroll-in-show" ).delay(this.base_animation+ 1300).animate({ opacity: 1 }, 1300);​
+
+    
+
+    // $( ".scroll-in-show" ).each(function( index ) {   
+    //   let top_of_window = $(window).scrollTop();   
+    //   let top_of_object = $(this).offset().top;
+    //   if(top_of_window >= top_of_object*0.9) {
+    //     $(this).css({"opacity": "1"});
+    //   } else {
+    //     $(this).css({"opacity": "0"});
+    //   }
+    // });
+    // $( ".scroll-in-show.earlier" ).each(function( index ) {   
+    //   let top_of_window = $(window).scrollTop();   
+    //   let top_of_object = $(this).offset().top;
+    //   if(top_of_window >= top_of_object*0.9) {
+    //     $(this).css({"opacity": "1"});
+    //   } else {
+    //     $(this).css({"opacity": "0"});
+    //   }
+    // });
 
 
-    $( ".scroll-in-show" ).each(function( index ) {   
-      let top_of_window = $(window).scrollTop();   
-      let top_of_object = $(this).offset().top;
-      if(top_of_window >= top_of_object*0.6) {
-        $(this).css({"opacity": "1"});
-      } else {
-        $(this).css({"opacity": "0"});
-      }
-    });
-    $( ".scroll-in-show.earlier" ).each(function( index ) {   
-      let top_of_window = $(window).scrollTop();   
-      let top_of_object = $(this).offset().top;
-      if(top_of_window >= top_of_object*0.2) {
-        $(this).css({"opacity": "1"});
-      } else {
-        $(this).css({"opacity": "0"});
-      }
-    });
 
     //....................
 
 
-   $(window).scroll( function(){
-     let base = 0
-    $( ".scroll-in-show" ).each(function( index ) {   
-      let top_of_window = $(window).scrollTop();   
-      let top_of_object = $(this).offset().top;
-      if(top_of_window >= top_of_object - 550) {
+  //  $(window).scroll( function(){
+  //    let base = 0
+  //   $( ".scroll-in-show" ).each(function( index ) {   
+  //     let top_of_window = $(window).scrollTop();   
+  //     let top_of_object = $(this).offset().top;
+  //     if(top_of_window >= top_of_object - 2000) {
         
-        $(this).css({"opacity": "1"});
-      } else {
-        $(this).css({"opacity": "0"});
-      }
-      base += 0.01
-    });    
+  //       $(this).css({"opacity": "1"});
+  //     } else {
+  //       $(this).css({"opacity": "0"});
+  //     }
+  //     base += 0.01
+  //   });    
 
-    $( ".scroll-in-show.earlier" ).each(function( index ) {   
-      let top_of_window = $(window).scrollTop();   
-      let top_of_object = $(this).offset().top;
-      if(top_of_window >= top_of_object-550) {
+  //   $( ".scroll-in-show.earlier" ).each(function( index ) {   
+  //     let top_of_window = $(window).scrollTop();   
+  //     let top_of_object = $(this).offset().top;
+  //     if(top_of_window >= top_of_object- 2000) {
         
-        $(this).css({"opacity": "1"});
-      } else {
-        $(this).css({"opacity": "0"});
-      }
-    });  
+  //       $(this).css({"opacity": "1"});
+  //     } else {
+  //       $(this).css({"opacity": "0"});
+  //     }
+  //   });  
     
-  });                                                         ​
+  // });                                                         ​
 
    this.slideAnimations();
    
