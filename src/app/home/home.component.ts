@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
                                                             top: 0 }, 1000);​
 
     $(".my-photo").delay(this.base_animation+ 1700).animate({ opacity: 1 }, 1300);​
-    $( ".scroll-in-show" ).delay(this.base_animation+ 1300).animate({ opacity: 1 }, 1300);​
+    $( ".scroll-in-show" ).delay(this.base_animation+ 1300).animate({ opacity: 1 }, 1000);​
 
     
 

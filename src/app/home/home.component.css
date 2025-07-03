@@ -281,7 +281,7 @@ bottomFeatureRow a {
 }
 #djangoAppScreen {
     width: 45%;
-    transition: transform 1s ease;
+    transition: transform 0.8s ease;
     border-radius: 10px;
 }
 
@@ -298,11 +298,11 @@ bottomFeatureRow a {
 }
 
 #djangoAppScreen:hover {
-    transform: scale(1.19);
+    transform: scale(1.10);
     box-shadow: 0px 0px 10px 5px #bc87f8;
 }
 .image-wrapper:hover img {
-    transform: scale(1.19);
+    transform: scale(1.10);
     
 }
 .second .image-wrapper:hover img {
@@ -813,7 +813,7 @@ change:
 
 
     #djangoAppScreen {
-        width: 65%;
+        width: 70%;
     }
 
     #reparkScreen {
@@ -843,6 +843,10 @@ change:
         font-size: 23px;
     }
 }
+
+/* -====================================================-=--- */
+
+
 @media screen and (min-width: 1381px) and (max-width: 1600px) {
     #left {
         left: 22%;
@@ -862,7 +866,7 @@ change:
         
     }
     #djangoAppScreen {
-        width: 65%;
+        width: 80%;
     }
     #reparkScreen {
         margin-top: 1%;
@@ -924,6 +928,10 @@ change:
     .my-photo img {
         width: 5vw;
         border-radius: 45px;
+    }
+
+    #djangoAppScreen {
+        width: 60%;
     }
 }
 
