@@ -59,6 +59,7 @@ h3.text-gp, h4.text-gp {
     left: 22%;
     top: 16%;
     width: fit-content;
+    padding-top: 1%;
 }
 
 
@@ -190,6 +191,7 @@ h3.text-gp, h4.text-gp {
 .projects-main-wrap {
     padding-left: 6%;
     padding-right: 6%;
+    padding-bottom: 2%;
 }
 
 .showCaseWrapper {
@@ -291,9 +293,10 @@ bottomFeatureRow a {
     transition: transform 1s ease;
 }
 #tableauScreen {
-    border-radius: 10px;
+    border-radius: 15px;
     width: 61%;
-    height: 55%;
+    padding-top: 10px;
+    height: auto;
     transition: transform 1s ease;
 }
 
@@ -330,13 +333,14 @@ bottomFeatureRow a {
     align-content: center;
     justify-content: center;
     width: 100%;
+    padding-left: 1%;
     
 }
 
 .resume-img-wrap {
     border: 3px solid transparent;
     overflow: hidden;
-    height: 17vw;
+    height: auto;
     margin-bottom: 3%;
     border-radius: 10px;
 }
@@ -346,8 +350,8 @@ bottomFeatureRow a {
 #resume {
     transition: transform .5s ease;
     height: 20vw;
-    padding-bottom: 5%;
-    width: 51vw;
+    padding-bottom: 3%;
+    width: 62vw;
     
 }
 #resume:hover {
@@ -740,10 +744,22 @@ change:
     #djangoAppScreen {
         width: 65%;
     }
-    #reparkScreen {
+    /* #reparkScreen {
         width: 45%;
         height: 82%;
+    } */
+
+    #reparkScreen {
+        margin-top: 1%;
+        width: 43%;
+        height: 60%;
     }
+
+    #tableauScreen {
+        width: 65%;
+    }
+
+
     .image-wrapper {
         padding-top: 10px;
     }
@@ -762,11 +778,7 @@ change:
         top: 0%;
     }
 
-     #reparkScreen {
-        margin-top: 1%;
-        width: 43%;
-        height: 60%;
-    }
+     
     .productPhoto {
         padding-top: 5%;
         height:100%;
@@ -795,17 +807,32 @@ change:
     .image-container.welcome-img {
         padding-left: 3%;
     }
+
+    
+
+    #resume {
+       
+    }
 }
+
+
+
+/* ======================================================= */
+
 
 @media screen and (min-width: 1201px) and (max-width: 1380px) {
 
      #left {
-        left: 21%;
+        left: 19%;
+    }
+
+    #frame {
+        height: 35vw;
     }
 
     .welcome {
         padding-bottom: 4%;
-        width: 56vw;
+        width: 62vw;
     }
     .image-container.welcome-img.post-animation-left {
         left: -3%;
@@ -821,6 +848,12 @@ change:
         width: 43%;
         height: 60%;
     }
+
+    #tableauScreen {
+        width: 70%;
+    }
+
+
     .productPhoto {
         padding-top: 5%;
         height:100%;
@@ -852,9 +885,13 @@ change:
         left: 22%;
     }
 
+    #frame {
+        height: 30vw;
+    }
+
     .welcome {
         padding-bottom: 4%;
-        width: 56vw;
+        width: 53vw;
     }
     .image-container.welcome-img.post-animation-left {
         left: -3%;
@@ -873,6 +910,11 @@ change:
         width: 43%;
         height: 60%;
     }
+
+    #tableauScreen {
+        width: 80%;
+    }
+
     .productPhoto {
         padding-top: 5%;
         height:100%;
@@ -892,16 +934,28 @@ change:
     #subTitle {
         font-size: 23px;
     }
+
+
+    #resumeWrap {
+        padding-left: 0%;
+    }
+
+    #resume {
+        height: 14vw;
+        padding-bottom: 1%;
+        width: 45vw;
+    }
     
 }
 
 
-
+/* ===================================================== */
 
 @media screen and (min-width: 1601px) { 
     .welcome {
         padding-bottom: 4%;
         width: 56vw;
+        
     }
 
 
@@ -910,7 +964,7 @@ change:
     }
 
     .image-container.welcome-img.post-animation-left {
-        left: 0%;
+        left: 0%; 
     }
 
 
@@ -933,18 +987,95 @@ change:
     #djangoAppScreen {
         width: 60%;
     }
+
+
+    
+     
 }
 
-/* @media screen and (min-width: 1801px) and (max-width: 1900px) {
-    .welcome {
-        padding-bottom: 4%;
-        width: 56vw;
+/* ================================================================== */
+
+@media screen and (min-width: 1800px) {
+    #left {
+        padding-top: 1%;
+        left: 23%;
     }
-    .image-container.welcome-img.post-animation-left {
-        left: -3%;
-    } 
+
+    #frame {
+        height: 21vw;
+    }
+
+    .my-photo {
+        left: 48%;
+    }
+
+    .my-photo img {
+        width: 4vw;
+        border-radius: 100px;
+    }
+
+
+    #resumeWrap {
+        padding-left: 1.5%;
+    }
+
+    #resume {
+
+        height: 14vw;
+        padding-bottom: 1%;
+        width: 45vw;
+    }
+
+}
+
+/* ==================================================== */
+
+
+@media screen and (min-width: 2200px) { 
+
+    #frame {
+        height: 20vw;
+    }
+
+    #resumeWrap {
+        padding-left: 1.5%;
+    }
+
     
-} */
+
+    #resume {
+        height: 15vw;
+        padding-bottom: 0%;
+        width: 34vw;
+    }
+
+ }
+
+
+/* ==================================================== */
+
+
+ @media screen and (min-width: 3000px) { 
+
+    #left {
+        padding-top: 0.2%;
+    }
+     #frame {
+        height: 16vw;
+    }
+
+    #resumeWrap {
+        padding-left: 1.5%;
+    }
+
+    #resume {
+        height: 9vw;
+        padding-bottom: 0%;
+        width: 26vw;
+    }
+
+ }
+
 
 
 
