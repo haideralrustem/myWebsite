@@ -733,6 +733,8 @@ change:
     
 }
 
+/* ========================================================== */
+
 
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
 
@@ -937,7 +939,7 @@ change:
 
 
     #resumeWrap {
-        padding-left: 0%;
+        padding-right: 1%;
     }
 
     #resume {
@@ -986,6 +988,10 @@ change:
 
     #djangoAppScreen {
         width: 60%;
+    }
+
+    #resumeWrap {
+        padding-left: 2%;
     }
 
 
